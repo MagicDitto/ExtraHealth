@@ -10,6 +10,4 @@ public class ExtraHealth extends JavaPlugin {
 	public final void onEnable() {
 		Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
 	}
-	
-	// test pullrequest across fork
 }
