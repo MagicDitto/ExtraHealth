@@ -26,5 +26,7 @@ public class PlayerListener implements Listener {
 
 		player.setMaxHealth(health);
 		player.setHealth((player.getHealth() / player.getMaxHealth()) * health);
+
+		// test comment for pull request
 	}
 }
