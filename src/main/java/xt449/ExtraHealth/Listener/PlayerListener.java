@@ -31,5 +31,6 @@ public class PlayerListener implements Listener {
 
 		player.setMaxHealth(health);
 		player.setHealth((player.getHealth() / player.getMaxHealth()) * health);
+		// asdfjaisdfjasdfi test//
 	}
 }
