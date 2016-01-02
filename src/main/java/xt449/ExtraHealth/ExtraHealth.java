@@ -8,12 +8,6 @@ public class ExtraHealth extends JavaPlugin {
 
 	@Override
 	public final void onEnable() {
-		getLogger().info("has been enabled!");
 		Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
-	}
-
-	@Override
-	public final void onDisable() {
-		getLogger().info("has been disabled!");
 	}
 }
