@@ -1,10 +1,13 @@
 package xt449.ExtraHealth;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
+import xt449.ExtraHealth.Listener.PlayerListener;
 
 public class ExtraHealth extends JavaPlugin {
 
-	/**
-	 * class thing :D jk jk
-	 */
+	@Override
+	public final void onEnable() {
+		Bukkit.getPluginManager().registerEvents(new PlayerListener(), this);
+	}
 }
