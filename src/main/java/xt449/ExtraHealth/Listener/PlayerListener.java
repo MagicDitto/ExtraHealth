@@ -11,7 +11,12 @@ public class PlayerListener implements Listener {
 
 	@EventHandler(priority = EventPriority.NORMAL)
 	public final void onPlayerJoin(PlayerJoinEvent event) {
-		updateMaxHealth(event.getPlayer());
+		Player player = event.getPlayer();
+
+		player.setHealthScaled(true);
+		player.setHealthScale(40);
+
+		updateMaxHealth(player);
 	}
 
 	@EventHandler(priority = EventPriority.NORMAL)
@@ -26,7 +31,5 @@ public class PlayerListener implements Listener {
 
 		player.setMaxHealth(health);
 		player.setHealth((player.getHealth() / player.getMaxHealth()) * health);
-
-		// test comment for pull request
 	}
 }
